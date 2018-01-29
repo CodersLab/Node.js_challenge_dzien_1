@@ -1,4 +1,4 @@
-let tab = [...process.argv.slice(2).map(x => Number(x))];
+let tab = process.argv.slice(2).map(x => Number(x));
 
 oneSeries = (num) => setTimeout(() => console.log(num), num*num);
 
