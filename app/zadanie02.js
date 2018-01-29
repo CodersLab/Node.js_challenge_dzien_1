@@ -10,9 +10,9 @@ let arr = {
   3000: 'programem'
 };
 for (let i in arr) {
-    (i => {
+
         setTimeout(() => {
             console.log(arr[i]);
         }, i);
-    })(i);
+
 }
