@@ -1,7 +1,9 @@
 //Twój kod
 
-for(let i=2; i<process.argv.length; i++) {
-    setTimeout( () => {
-        console.log(Number(process.argv[i]));
-    }, Number(process.argv[i])*1000);
-}
+const showNum = process.argv.forEach( (element, index) => {
+    if (index >= 2) {
+        setTimeout( () => {
+            console.log(Number(element));
+        }, Number(element)*1000);
+    }
+});
