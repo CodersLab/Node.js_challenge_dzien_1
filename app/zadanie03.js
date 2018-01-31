@@ -2,8 +2,11 @@
 
 let sum = 0;
 
-for(let i=2; i<process.argv.length; i++) {
-    sum += Number(process.argv[i]);
-}
+const addition = process.argv.forEach( (element, index) => {
+    if (index >= 2) {
+        sum += Number(element);
+    }
+});
 
 console.log(sum);
+
